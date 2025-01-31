@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="Project Card Component" charset="UTF-8" />
+        <title>Project Card Component</title>
+        <style>
+            project-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 60vh;
+                width: 40vw;
+                background-color: beige;
+                margin: 2rem;
+            }
+            project-card > img {
+                margin: 1rem 0;
+                height: 30vh;
+                width: 35vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <project-card card-index="0">
+                <h3>GeoGuru</h3>
+                <img src="/public/geoguru.png" />
+                <button>Learn More About GeoGuru</button>
+            </project-card>
+            <project-card card-index="1">
+                <h3>E-Waste Website</h3>
+                <img src="/public/e-waste.png" />
+                <button>Learn More About E-Waste</button>
+            </project-card>
+        </div>
+    </body>
+</html>
