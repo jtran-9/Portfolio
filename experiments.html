@@ -2,8 +2,27 @@
 <html lang="en">
     <head>
         <title>Justin Tran's Portfolio</title>
-        <meta name="Justin Tran's Portfolio" charset="UTF-8" />
-        <link href="" rel="" />
+        <meta name="Justin Tran's Portfolio" content="A showcase of all of my projects!">
+        <style>
+            td, th {
+                border: solid black 2px;
+            }
+        </style>
+        <script>
+            const canvas = document.querySelector("canvas");
+            const ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(50, 140);
+            ctx.lineTo(90, 60);
+            ctx.lineTo(130, 140);
+            ctx.lineTo(50, 90);
+            ctx.lineTo(130, 90);
+            ctx.closePath();
+            ctx.stroke();
+        </script>
+        <noscript>
+            <h1>uh oh! looks like javascript is turned off!</h1>
+        </noscript>
     </head>
     <body>
         <header>
@@ -24,14 +43,14 @@
                     <aside>Not that anyone is going to fill this out right now but just in case!</aside>
                 </details>
                 <br>
-                <form action="" method="get">
+                <form action="/index.html" method="get">
                     <label for="name">What's your name?</label>
                     <br>
                     <input type="text" id="name" required>
                     <br>
                     <label for="location">Where is your company located?</label>
                     <br>
-                    <select required>
+                    <select>
                         <optgroup label="North America">
                             <option>USA</option>
                             <option>Canada</option>
@@ -53,11 +72,11 @@
                     <input type="submit">
                 </form>
             </section>
-            <section>
+            <div>
                 <h3>Hightlight Information</h3>
                 <fieldset>
                     <legend>What music genre are you most interested in?</legend>
-                    <input list="genre"/>
+                    <input list="genre">
                     <datalist id="genre">
                         <option value="K-Pop"></option>
                         <option value="Rap"></option>
@@ -70,8 +89,8 @@
                 <figcaption>
                     <cite>This quote is from <a href="https://ucsdguardian.org/2022/04/03/the-uc-socially-dead-stigma/">The Guardian</a></cite>
                 </figcaption>
-            </section>
-            <section>
+            </div>
+            <div>
                 <hgroup>
                     <h3>Formatting, Visualizing, and Gathering Information</h3>
                     <p>and some practical uses...</p>
@@ -82,10 +101,10 @@
                 <h4>Top 3 of My Most Played Songs 2024</h4>
                 <ol>
                     <li>Meow The Secret Boy by UMJI</li>
-                    <audio controls src="/public/Meow the Secret boy 4.mp3"></audio>
                     <li>きみのヒーロー by あれくん</li>
                     <li>HANGANG by Paul Kim, BIG Naughty</li>
                 </ol>
+                <audio controls src="/public/Meow the Secret boy 4.mp3"></audio>
                 <dialog open>
                     <p>CLICK HERE TO GET A MILLION DOLLARS</p>
                     <button>Get $1,000,000</button>
@@ -93,7 +112,7 @@
                 <ins>I'm inserting this line into this document</ins><br>
                 <del>I'm removing this line out of this document</del>
                 <search>
-                    <h4>Find a song to play</h5>
+                    <h4>Find a song to play</h4>
                     <form>
                         <label for="search-song">Search for a song to play</label>
                         <input type="search" id="search-song" list="songs" placeholder="Die With a Smile by Bruno Mars ft. Lady Gaga">
@@ -110,9 +129,9 @@
                         How much money I've spent in 5 months
                     </caption>
                     <colgroup>
-                        <col/>
-                        <col span="1" class="edible"/>
-                        <col span="3" class="non-edible"/>
+                        <col>
+                        <col span="1" class="edible">
+                        <col span="3" class="non-edible">
                     </colgroup>
                     <tr>
                         <td></td>
@@ -130,13 +149,13 @@
                     </tr>
                 </table>
                 <figure>
-                    <img src="/public/spent.png"/>
+                    <img src="/public/spent.png">
                     <figcaption>A visual representation of how much I've spent</figcaption>
                 </figure>
                 <div>
                     <p>To inspect the page source on a deployed website quickly, press <kbd>Ctrl</kbd> + <kbd>u</kbd> for Windows and <kbd>option</kbd> + <kbd>command</kbd> + <kbd>u</kbd></p>
                 </div>
-            </section>
+            </div>
             <section>
                 <h3>Dictionary</h3>
                 <dl>
@@ -174,23 +193,3 @@
         <footer><p>© 2025 Justin Tran</p></footer>
     </body>
 </html>
-<style>
-    td, th {
-        border: solid black 2px;
-    }
-</style>
-<script>
-    const canvas = document.querySelector("canvas");
-    const ctx = canvas.getContext("2d");
-    ctx.beginPath();
-    ctx.moveTo(50, 140);
-    ctx.lineTo(90, 60);
-    ctx.lineTo(130, 140);
-    ctx.lineTo(50, 90);
-    ctx.lineTo(130, 90);
-    ctx.closePath();
-    ctx.stroke();
-</script>
-<noscript>
-    <h1>uh oh! looks like javascript is turned off!</h1>
-</noscript>
