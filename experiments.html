@@ -23,21 +23,29 @@
     </head>
     <body>
         <header>
-            <h4>Find a song to play</h4>
-            <search>
-                <form action="/index.html">
-                    <label for="search-song">Search for a song to play</label>
-                    <input type="search" id="search-song" list="songs" placeholder="Die With a Smile by Bruno Mars ft. Lady Gaga">
-                    <datalist id="songs">
-                        <option value="Easy by Le Serrafim"></option>
-                        <option value="Work by Ateez"></option>
-                        <option value="I Like it by Stray Kids"></option>
-                    </datalist>
-                    <button type="submit">Search</button>
-                </form>
-            </search>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About Me</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/resume.html">Resume</a>
+                <a href="/experiments.html">Experiments</a>
+            </nav>
         </header>
         <main>
+            <section>
+                <search>
+                    <form>
+                        <label for="search-song">Search for a song to play</label>
+                        <input type="search" id="search-song" list="songs" placeholder="Die With a Smile by Bruno Mars ft. Lady Gaga">
+                        <datalist id="songs">
+                            <option value="Easy by Le Serrafim"></option>
+                            <option value="Work by Ateez"></option>
+                            <option value="I Like it by Stray Kids"></option>
+                        </datalist>
+                        <button type="submit">Search</button>
+                    </form>
+                </search>
+            </section>
             <section>
                 <h3>Forms</h3>
                 <details>
