@@ -20,9 +20,6 @@
             ctx.closePath();
             ctx.stroke();
         </script>
-        <noscript>
-            <h1>uh oh! looks like javascript is turned off!</h1>
-        </noscript>
     </head>
     <body>
         <header>
@@ -50,7 +47,7 @@
                     <br>
                     <label for="location">Where is your company located?</label>
                     <br>
-                    <select>
+                    <select id="location">
                         <optgroup label="North America">
                             <option>USA</option>
                             <option>Canada</option>
@@ -104,26 +101,13 @@
                     <li>きみのヒーロー by あれくん</li>
                     <li>HANGANG by Paul Kim, BIG Naughty</li>
                 </ol>
-                <audio controls src="/public/Meow the Secret boy 4.mp3"></audio>
+                <audio controls src="/public/Cat.mp3"></audio>
                 <dialog open>
                     <p>CLICK HERE TO GET A MILLION DOLLARS</p>
                     <button>Get $1,000,000</button>
                 </dialog>
                 <ins>I'm inserting this line into this document</ins><br>
                 <del>I'm removing this line out of this document</del>
-                <search>
-                    <h4>Find a song to play</h4>
-                    <form>
-                        <label for="search-song">Search for a song to play</label>
-                        <input type="search" id="search-song" list="songs" placeholder="Die With a Smile by Bruno Mars ft. Lady Gaga">
-                        <datalist id="songs">
-                            <option value="Easy by Le Serrafim"></option>
-                            <option value="Work by Ateez"></option>
-                            <option value="I Like it by Stray Kids"></option>
-                        </datalist>
-                        <button type="submit">Search</button>
-                    </form>
-                </search>
                 <table>
                     <caption>
                         How much money I've spent in 5 months
@@ -148,14 +132,27 @@
                         <td>$390.49</td>
                     </tr>
                 </table>
-                <figure>
-                    <img src="/public/spent.png">
-                    <figcaption>A visual representation of how much I've spent</figcaption>
-                </figure>
                 <div>
                     <p>To inspect the page source on a deployed website quickly, press <kbd>Ctrl</kbd> + <kbd>u</kbd> for Windows and <kbd>option</kbd> + <kbd>command</kbd> + <kbd>u</kbd></p>
                 </div>
             </div>
+            <search>
+                <h4>Find a song to play</h4>
+                <form>
+                    <label for="search-song">Search for a song to play</label>
+                    <input type="search" id="search-song" list="songs" placeholder="Die With a Smile by Bruno Mars ft. Lady Gaga">
+                    <datalist id="songs">
+                        <option value="Easy by Le Serrafim"></option>
+                        <option value="Work by Ateez"></option>
+                        <option value="I Like it by Stray Kids"></option>
+                    </datalist>
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+            <figure>
+                <img src="/public/spent.png">
+                <figcaption>A visual representation of how much I've spent</figcaption>
+            </figure>
             <section>
                 <h3>Dictionary</h3>
                 <dl>
@@ -191,5 +188,8 @@
             </section>
         </main>
         <footer><p>© 2025 Justin Tran</p></footer>
+        <noscript>
+            <h1>uh oh! looks like javascript is turned off!</h1>
+        </noscript>
     </body>
 </html>
